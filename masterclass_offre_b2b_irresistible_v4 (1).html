@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Masterclass : Comment Créer une Offre B2B Irrésistible</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: #f8f4f0;
+        }
+        
+        .gradient-bg {
+            background: #1a1a1a;
+        }
+        
+        .accent-yellow {
+            background-color: #FFE659;
+        }
+        
+        .accent-purple {
+            background-color: #DCC8FF;
+        }
+        
+        .text-accent-yellow {
+            color: #FFE659;
+        }
+        
+        .text-accent-purple {
+            color: #DCC8FF;
+        }
+        
+        .section-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .progress-bar {
+            height: 4px;
+            background: #FFE659;
+            border-radius: 2px;
+        }
+        
+        .chapter-number {
+            color: #FFE659;
+            font-weight: 700;
+        }
+        
+        .icon-container {
+            background: #FFE659;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+        }
+        
+        .comparison-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-box {
+            background: #FFE659;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        
+        .formula-box {
+            background: #f8f4f0;
+            border-left: 5px solid #FFE659;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        
+        .pure-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .pure-letter {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        
+        .venn-diagram {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 30px auto;
+        }
+        
+        .venn-circle {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            text-align: center;
+            color: #1a1a1a;
+            border: 3px solid #1a1a1a;
+        }
+        
+        .venn-circle:nth-child(1) {
+            background: #FFE659;
+            top: 0;
+            left: 50px;
+        }
+        
+        .venn-circle:nth-child(2) {
+            background: #DCC8FF;
+            top: 0;
+            right: 50px;
+        }
+        
+        .venn-circle:nth-child(3) {
+            background: #f8f4f0;
+            bottom: 0;
+            left: 90px;
+        }
+        
+        .sales-craft-logo {
+            background: #1a1a1a;
+            color: #FFE659;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .nav-item {
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .nav-item:hover {
+            background: #FFE659;
+            color: #1a1a1a;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #FFE659;
+            margin-bottom: 10px;
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .checklist-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #FFE659;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a1a1a;
+        }
+        
+        .pyramid {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 150px solid #FFE659;
+            margin: 20px auto;
+            position: relative;
+        }
+        
+        .pyramid-text {
+            position: absolute;
+            bottom: -130px;
+            left: -50px;
+            width: 100px;
+            text-align: center;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .flow-step {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            min-width: 150px;
+        }
+        
+        .flow-arrow {
+            color: #FFE659;
+            font-size: 24px;
+        }
+        
+        .testimonial-card {
+            background: #DCC8FF;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 0;
+            color: #1a1a1a;
+            font-style: italic;
+        }
+        
+        .countdown-timer {
+            background: #1a1a1a;
+            color: #FFE659;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .timer-number {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0 10px;
+        }
+        
+        .analogy-box {
+            background: #f8f4f0;
+            border: 2px solid #FFE659;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+            position: relative;
+        }
+        
+        .analogy-icon {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #FFE659;
+            color: #1a1a1a;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .comparison-vs {
+            background: #1a1a1a;
+            color: #FFE659;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin: 0 20px;
+        }
+        
+        .bonus-badge {
+            background: #DCC8FF;
+            color: #1a1a1a;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .warning-box {
+            background: #ff4444;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .success-box {
+            background: #00cc66;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: #DCC8FF;
+            margin: 50px 0;
+            border-radius: 2px;
+        }
+        
+        .floating-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #1a1a1a;
+            color: #FFE659;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .floating-cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        
+        .context-intro {
+            background: #f8f4f0;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .context-intro p {
+            margin-bottom: 20px;
+        }
+        
+        .context-intro p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .reading-time {
+            background: rgba(255, 255, 255, 0.1);
+            color: #FFE659;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        
+        .action-checklist {
+            background: #f8f4f0;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .action-checklist h3 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .action-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #DCC8FF;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+        
+        .action-number {
+            background: #DCC8FF;
+            color: #1a1a1a;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .linkedin-cta {
+            background: linear-gradient(135deg, #0077B5 0%, #005885 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,119,181,0.3);
+        }
+        
+        .linkedin-button {
+            background: white;
+            color: #0077B5;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .linkedin-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            text-decoration: none;
+            color: #0077B5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .flow-diagram {
+                flex-direction: column;
+            }
+            
+            .flow-arrow {
+                transform: rotate(90deg);
+            }
+            
+            .venn-diagram {
+                width: 250px;
+                height: 150px;
+            }
+            
+            .venn-circle {
+                width: 100px;
+                height: 100px;
+                font-size: 10px;
+            }
+            
+            .timer-number {
+                font-size: 36px;
+            }
+            
+            .container {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="sales-craft-logo inline-block mb-8">
+                sales<span class="text-accent-yellow">CRAFT</span>
+            </div>
+            <h1 class="text-5xl font-bold mb-6">La Masterclass</h1>
+            <h2 class="text-3xl mb-8 text-accent-yellow">Comment créer une offre B2B irrésistible</h2>
+            <div class="reading-time">
+                <i class="fas fa-clock mr-2"></i>
+                ⏱️ 7 min de lecture
+            </div>
+            <p class="text-xl mb-12 max-w-3xl mx-auto">
+                Découvrez la méthode complète pour transformer votre offre "correcte" en offre irrésistible qui déclenche l'achat immédiat
+            </p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <div class="text-gray-600">Parties complètes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">40+</div>
+                    <div class="text-gray-600">Stratégies concrètes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="text-gray-600">Actionnable</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="nav-item" onclick="scrollToSection('part1')">1. Pourquoi GÉNIALE</div>
+                <div class="nav-item" onclick="scrollToSection('part2')">2. Différenciation</div>
+                <div class="nav-item" onclick="scrollToSection('part3')">3. Étapes</div>
+                <div class="nav-item" onclick="scrollToSection('part4')">4. Stacking</div>
+                <div class="nav-item" onclick="scrollToSection('part5')">5. Incomparable</div>
+                <div class="nav-item" onclick="scrollToSection('part6')">6. Boosters</div>
+                <div class="nav-item" onclick="scrollToSection('part7')">7. Pitch</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        
+        <!-- Part 1 -->
+        <section id="part1" class="section-card p-8 mb-12">
+            <div class="icon-container">
+                <i class="fas fa-bomb text-2xl text-black"></i>
+            </div>
+            <h2 class="text-4xl font-bold text-center mb-8">
+                <span class="chapter-number">Partie 1</span> — Pourquoi ton offre doit être GÉNIALE, pas juste « bonne »
+            </h2>
+            
+            <div class="context-intro">
+                <p><strong>Quand ton offre est simplement "bonne", voici ce que pense ton prospect :</strong> « Je vais y réfléchir. » Ce genre de réaction n'est pas un "non" franc… mais c'est un énorme frein à l'achat.</p>
+                
+                <p>Et surtout, c'est le début d'un tunnel de silence où les appels de closing deviennent flous, tu accumules les "ghosts", et tu dépenses du temps et de l'énergie pour des conversations qui ne mènent nulle part.</p>
+                
+                <p>Au contraire, une offre irrésistible fait réagir immédiatement : « Ok, c'est combien ? Quand est-ce qu'on commence ? » Cette résonance immédiate qui déclenche l'achat, c'est exactement ce que nous allons apprendre à construire.</p>
+            </div>
+            
+            <div class="warning-box">
+                <h3 class="text-xl font-bold mb-4">⚠️ Une offre moyenne peut littéralement tuer ton business</h3>
+                <p>Quand ton offre est simplement "bonne", voici ce que pense ton prospect : « Je vais y réfléchir. »</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 my-8">
+                <div class="comparison-table">
+                    <div class="bg-red-100 p-6 text-center">
+                        <h4 class="font-bold text-red-800 mb-4">Offre "bonne"</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-times text-red-500"></i>
+                                <span>"Je vais y réfléchir"</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-times text-red-500"></i>
+                                <span>Appels de closing flous</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-times text-red-500"></i>
+                                <span>Accumulation de "ghosts"</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-times text-red-500"></i>
+                                <span>Conversations qui stagnent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comparison-table">
+                    <div class="bg-green-100 p-6 text-center">
+                        <h4 class="font-bold text-green-800 mb-4">Offre irrésistible</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>"Ok, c'est combien ?"</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>"Quand est-ce qu'on commence ?"</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Décision immédiate</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Réaction instantanée</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <i class="fas fa-lightbulb mr-2"></i>
+                <strong>Conseil pédagogique :</strong> Une offre irrésistible soulage instantanément un problème urgent et reconnu. C'est cette résonance immédiate qui déclenche l'achat.
+            </div>
+            
+            <div class="analogy-box">
+                <div class="analogy-icon">💡 Analogie</div>
+                <p class="mt-4"><strong>C'est comme si tu essayais de vendre une bouteille d'eau à quelqu'un qui ne sait même pas qu'il a soif.</strong> Il ne va pas tendre la main. Et pire : il ne te rappellera jamais.</p>
+            </div>
+            
+            <div class="formula-box">
+                <h3 class="text-xl font-bold mb-4">📚 La règle des 40-40-20</h3>
+                <div class="grid md:grid-cols-3 gap-4 mb-4">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent-yellow">40%</div>
+                        <div class="text-sm">Bon ciblage</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent-purple">40%</div>
+                        <div class="text-sm">Qualité de l'offre</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-gray-600">20%</div>
+                        <div class="text-sm">Qualité du message</div>
+                    </div>
+                </div>
+                <p class="text-center font-semibold">80% de ta réussite = Ta cible + Ton offre</p>
+            </div>
+            
+            <div class="success-box">
+                <h3 class="text-xl font-bold mb-4">🚩 Synthèse claire</h3>
+                <ul class="space-y-2">
+                    <li>✅ Une offre faible génère confusion, objections et stagnation</li>
+                    <li>✅ Une offre "correcte" ne suffit plus dans un marché ultra concurrentiel</li>
+                    <li>✅ Tu dois viser une offre exceptionnelle, qui déclenche un "je veux ça maintenant"</li>
+                    <li>✅ La qualité de ton offre pèse deux fois plus que ton message</li>
+                    <li>✅ Tu ne peux pas compenser une mauvaise offre avec du bon copywriting</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Part 2 -->
+        <section id="part2" class="section-card p-8 mb-12">
+            <div class="icon-container">
+                <i class="fas fa-gem text-2xl text-black"></i>
+            </div>
+            <h2 class="text-4xl font-bold text-center mb-8">
+                <span class="chapter-number">Partie 2</span> — De commoditisée à propriétaire
+            </h2>
+            
+            <div class="context-intro">
+                <p><strong>Une offre commoditisée, c'est une offre qui ressemble à celle de tous tes concurrents</strong>, qui peut être achetée partout ailleurs, et qui ne contient aucun élément distinctif.</p>
+                
+                <p>Par exemple : « Je fais des sites WordPress sur mesure » → tu es immédiatement comparé à des centaines d'autres freelances.</p>
+                
+                <p>La seule façon de s'en sortir, c'est de créer une offre que personne d'autre ne peut copier. Une offre propriétaire basée sur ta méthode unique, qui n'existe nulle part ailleurs car elle repose sur toi.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-red-50 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-red-800 mb-4">😴 Offre commoditisée</h3>
+                    <div class="space-y-3">
+                        <div class="checklist-item bg-red-100">
+                            <div class="checklist-icon bg-red-500 text-white">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <span>Ressemble à celle de tous tes concurrents</span>
+                        </div>
+                        <div class="checklist-item bg-red-100">
+                            <div class="checklist-icon bg-red-500 text-white">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <span>Peut être achetée partout ailleurs</span>
+                        </div>
+                        <div class="checklist-item bg-red-100">
+                            <div class="checklist-icon bg-red-500 text-white">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <span>Aucun élément distinctif</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-red-200 rounded-lg">
+                        <p class="text-sm italic">"Je fais des sites WordPress sur mesure"</p>
+                        <p class="text-xs mt-2 text-red-700">→ Tu es immédiatement comparé à des centaines d'autres freelances</p>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-green-800 mb-4">✨ Offre propriétaire</h3>
+                    <div class="space-y-3">
+                        <div class="checklist-item bg-green-100">
+                            <div class="checklist-icon bg-green-500 text-white">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Basée sur ta méthode unique</span>
+                        </div>
+                        <div class="checklist-item bg-green-100">
+                            <div class="checklist-icon bg-green-500 text-white">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>N'existe nulle part ailleurs</span>
+                        </div>
+                        <div class="checklist-item bg-green-100">
+                            <div class="checklist-icon bg-green-500 text-white">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span>Résout un problème spécifique</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-green-200 rounded-lg">
+                        <p class="text-sm italic">"Sprint 3 semaines avec méthode testée → résultats en 30 jours"</p>
+                        <p class="text-xs mt-2 text-green-700">→ Impossible à comparer avec d'autres freelances</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="analogy-box my-8">
+                <div class="analogy-icon">☕ Analogie</div>
+                <div class="mt-4 grid md:grid-cols-3 gap-4 items-center">
+                    <div class="text-center">
+                        <div class="text-6xl mb-2">🥤</div>
+                        <p><strong>Offre commoditisée</strong><br>Café au distributeur automatique</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="comparison-vs">VS</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-6xl mb-2">☕</div>
+                        <p><strong>Offre propriétaire</strong><br>Café signature par un barista avec recette unique</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h3 class="text-xl font-bold mb-4">🧱 Les briques d'une offre propriétaire</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-star text-yellow-500"></i>
+                            <span><strong>Unique :</strong> ne peut pas être comparée</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-lightbulb text-yellow-500"></i>
+                            <span><strong>Claire :</strong> transformation évidente</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-user text-yellow-500"></i>
+                            <span><strong>Personnelle :</strong> basée sur tes compétences</span>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-target text-yellow-500"></i>
+                            <span><strong>Ciblée :</strong> résout un vrai problème</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-eye text-yellow-500"></i>
+                            <span><strong>Mémorable :</strong> reste dans la tête</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-arrow-up text-yellow-500"></i>
+                            <span><strong>Résultat :</strong> valeur perçue élevée</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Part 3 -->
+        <section id="part3" class="section-card p-8 mb-12">
+            <div class="icon-container">
+                <i class="fas fa-brain text-2xl text-black"></i>
+            </div>
+            <h2 class="text-4xl font-bold text-center mb-8">
+                <span class="chapter-number">Partie 3</span> — La méthode étape par étape
+            </h2>
+            
+            <div class="context-intro">
+                <p><strong>La plupart des entrepreneurs commencent par là :</strong> « Qu'est-ce que je peux vendre ? Qu'est-ce que je sais faire ? » Mais ça donne des offres floues, génériques ou inutiles.</p>
+                
+                <p>Pourquoi ? Parce qu'elles ne partent pas des besoins réels du marché.</p>
+                
+                <p>L'approche gagnante : commence toujours par identifier ce que tes prospects veulent vraiment résoudre (et paieraient cher pour ça). Puis trouve un problème PURE : douloureux, urgent, reconnu et coûteux à ne pas résoudre.</p>
+            </div>
+            
+            <div class="warning-box">
+                <h3 class="text-xl font-bold mb-4">🛑 Erreur fréquente : partir de son produit</h3>
+                <p>La plupart des entrepreneurs commencent par : "Qu'est-ce que je peux vendre ? Qu'est-ce que je sais faire ?"</p>
+                <p class="mt-2 font-semibold">❌ Ça donne des offres floues, génériques ou inutiles</p>
+            </div>
+            
+            <div class="flow-diagram">
+                <div class="flow-step">
+                    <div class="text-3xl font-bold text-accent-yellow mb-2">1</div>
+                    <h3 class="font-bold mb-2">Le marché</h3>
+                    <p class="text-sm">Commence par ce que tes prospects veulent vraiment</p>
+                </div>
+                <div class="flow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="flow-step">
+                    <div class="text-3xl font-bold text-accent-purple mb-2">2</div>
+                    <h3 class="font-bold mb-2">Problème PURE</h3>
+                    <p class="text-sm">Painful, Urgent, Recognized, Expensive</p>
+                </div>
+                <div class="flow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="flow-step">
+                    <div class="text-3xl font-bold text-accent-yellow mb-2">3</div>
+                    <h3 class="font-bold mb-2">Ton offre</h3>
+                    <p class="text-sm">À l'intersection de 3 cercles</p>
+                </div>
+            </div>
+            
+            <div class="formula-box">
+                <h3 class="text-xl font-bold mb-4">🩹 Un problème PURE, c'est quoi ?</h3>
+                <div class="pure-diagram">
+                    <div class="pure-letter" style="background: #ff6b6b;">P</div>
+                    <div class="pure-letter" style="background: #ffd93d;">U</div>
+                    <div class="pure-letter" style="background: #6bcf7f;">R</div>
+                    <div class="pure-letter" style="background: #4dabf7;">E</div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-4 mt-6">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold">P</div>
+                            <div>
+                                <strong>Painful</strong><br>
+                                <span class="text-sm">Ça fait mal</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold">U</div>
+                            <div>
+                                <strong>Urgent</strong><br>
+                                <span class="text-sm">Il faut le résoudre maintenant</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">R</div>
+                            <div>
+                                <strong>Recognized</strong><br>
+                                <span class="text-sm">Le client en est conscient</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">E</div>
+                            <div>
+                                <strong>Expensive</strong><br>
+                                <span class="text-sm">Ne pas le résoudre coûte cher</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="analogy-box">
+                <div class="analogy-icon">🦷 Analogie</div>
+                <p class="mt-4"><strong>Tu n'as pas besoin de convaincre quelqu'un qui a une rage de dents d'aller chez le dentiste.</strong> Il cherche déjà la solution. Ton rôle : te positionner comme le bon dentiste, au bon endroit, avec la bonne méthode.</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h3 class="text-xl font-bold mb-4">📦 Construis ton offre à l'intersection de 3 cercles</h3>
+                <div class="venn-diagram">
+                    <div class="venn-circle">
+                        Besoins<br>du client
+                    </div>
+                    <div class="venn-circle">
+                        Tes<br>compétences
+                    </div>
+                    <div class="venn-circle">
+                        Ce que les<br>concurrents<br>ne font pas
+                    </div>
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center">
+                        <div class="text-sm font-bold">TON SWEET SPOT</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Part 4 -->
+        <section id="part4" class="section-card p-8 mb-12">
+            <div class="icon-container">
+                <i class="fas fa-gift text-2xl text-black"></i>
+            </div>
+            <h2 class="text-4xl font-bold text-center mb-8">
+                <span class="chapter-number">Partie 4</span> — Stacking et effet d'ancrage
+            </h2>
+            
+            <div class="context-intro">
+                <p><strong>Le principe du stacking :</strong> empiler des éléments de valeur complémentaires pour que ton offre devienne impossible à comparer au reste du marché.</p>
+                
+                <p>Tu renforces la transformation promise, tu crées l'impression d'un "package complet", et surtout : tu évites qu'on te compare sur le prix.</p>
+                
+                <p>L'autre clé : ne pas envoyer les prospects directement vers ton offre la plus chère, mais les orienter via une offre d'entrée bien pensée qui crée de la confiance et enclenche une logique de montée en gamme.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">🔺 Le "offer stacking"</h3>
+                    <p class="mb-4">Empiler des éléments de valeur complémentaires pour créer l'effet "Waouh"</p>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold mb-3">Exemple de stack :</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                <span>Offre de base (1 500 €)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-plus text-yellow-500"></i>
+                                <span>1 appel onboarding</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-plus text-yellow-500"></i>
+                                <span>1 audit personnalisé</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-plus text-yellow-500"></i>
+                                <span>1 plan d'action PDF</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-plus text-yellow-500"></i>
+                                <span>3 templates d'e-mails</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-plus text-yellow-500"></i>
+                                <span>1 accès Slack privé</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-green-100 rounded">
+                            <p class="text-sm italic">"Je ne compare pas juste un livrable... c'est tout un système."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">📈 Courbe de valeur perçue</h3>
+                    <div class="relative">
+                        <div class="h-64 bg-gradient-to-t from-yellow-100 to-purple-100 rounded-lg p-4 flex items-end">
+                            <div class="w-full">
+                                <div class="flex justify-between items-end h-full">
+                                    <div class="bg-yellow-500 w-12 h-12 rounded-t flex items-center justify-center text-white font-bold">1</div>
+                                    <div class="bg-yellow-500 w-12 h-20 rounded-t flex items-center justify-center text-white font-bold">2</div>
+                                    <div class="bg-yellow-500 w-12 h-32 rounded-t flex items-center justify-center text-white font-bold">3</div>
+                                    <div class="bg-yellow-500 w-12 h-48 rounded-t flex items-center justify-center text-white font-bold">4</div>
+                                </div>
+                                <div class="flex justify-between mt-2 text-xs">
+                                    <span>Base</span>
+                                    <span>+ Garantie</span>
+                                    <span>+ Bonus</span>
+                                    <span>+ Complément</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm mt-4 text-center italic">La valeur perçue monte en flèche, le prix reste stable</p>
+                </div>
+            </div>
+            
+            <div class="highlight-box mt-8">
+                <h3 class="text-xl font-bold mb-4">🧭 L'offre front-end</h3>
+                <p class="mb-4">Ne pas envoyer les prospects directement vers ton offre la plus chère, mais les orienter via une offre d'entrée bien pensée.</p>
+                
+                <div class="flow-diagram">
+                    <div class="flow-step">
+                        <div class="text-lg font-bold text-accent-yellow mb-2">Audit express</div>
+                        <div class="text-2xl font-bold">390€</div>
+                        <p class="text-sm mt-2">Livré en 48h<br>Recommandations clés</p>
+                    </div>
+                    <div class="flow-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="flow-step">
+                        <div class="text-lg font-bold text-accent-purple mb-2">Sprint transformation</div>
+                        <div class="text-2xl font-bold">3 900€</div>
+                        <p class="text-sm mt-2">Accompagnement complet<br>8 semaines</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="analogy-box">
+                <div class="analogy-icon">☕ Analogie</div>
+                <p class="mt-4"><strong>Tu ne proposes pas un abonnement à 1 200€/an à quelqu'un que tu viens de rencontrer.</strong> Tu lui proposes un café d'abord. Puis un déjeuner. Puis un projet.</p>
+            </div>
+            
+            <div class="formula-box">
+                <h3 class="text-xl font-bold mb-4">🧠 L'effet d'ancrage psychologique</h3>
+                <div class="text-center text-2xl font-bold mb-4 text-accent-yellow">
+                    "If this is good... then the rest must be even better."
+                </div>
+                <p>Quand tu proposes une petite offre front-end de grande qualité, le prospect se dit naturellement que ton accompagnement complet doit être incroyable.</p>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Part 5 -->
+        <section id="part5" class="section-card p-8 mb-12">
+            <div class="icon-container">
+                <i class="fas fa-crown text-2xl text-black"></i>
+            </div>
+            <h2 class="text-4xl font-bold text-center mb-8">
+                <span class="chapter-number">Partie 5</span> — L'offre "seule au monde"
+            </h2>
+            
+            <div class="context-intro">
+                <p><strong>Quand ton offre est facilement comparable, voici ce qui se passe :</strong> le prospect commence à faire des tableaux comparatifs, il te demande des rabais ou des ajustements, il dit : « Je vais en parler à un autre prestataire ».</p>
+                
+                <p>Et là… tu es coincé.</p>
+                
+                <p>Ce que tu dois viser au contraire : qu'il n'ait personne d'autre en tête avec qui comparer. Tu veux qu'il se dise : « Je ne sais pas si je vais le faire… mais si je le fais, c'est avec toi. »</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h3 class="text-xl font-bold mb-4">🧱 L'objectif : rendre ton offre non-comparable</h3>
+                <p class="mb-4">Tu veux qu'il se dise : <strong>"Je ne sais pas si je vais le faire... mais si je le fais, c'est avec toi."</strong></p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-yellow-100 to-purple-100 p-6 rounded-lg">
+                        <h4 class="font-bold mb-3">➊ Créer ta propre méthode nommée</h4>
+                        <p class="text-sm mb-3">Donne un nom à ta méthode → ça devient une propriété intellectuelle</p>
+                        <div class="bg-white p-3 rounded text-sm">
+                            <strong>❌ Avant :</strong> "J'aide les gens à structurer leur stratégie de contenu"<br>
+                            <strong>✅ Après :</strong> "Je les accompagne avec la méthode ContentFlow™ en 4 étapes"
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-purple-100 to-yellow-100 p-6 rounded-lg">
+                        <h4 class="font-bold mb-3">➋ Proposer un livrable unique</h4>
+                        <p class="text-sm mb-3">Crée un format propre à toi</p>
+                        <div class="bg-white p-3 rounded text-sm">
+                            <strong>Exemple :</strong> "Le plan d'action 90 jours imprimé & relié chez toi"<br>
+                            <span class="text-xs text-gray-600">→ Service abstrait devient objet concret</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-yellow-100 to-purple-100 p-6 rounded-lg">
+                        <h4 class="font-bold mb-3">➌ Limiter l'accès à ton offre</h4>
+                        <p class="text-sm mb-3">Plus tu rends ton offre exclusive, plus elle attire</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-calendar text-yellow-500"></i>
+                                <span class="text-sm">Nombre de places limité par mois</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-user-check text-yellow-500"></i>
+                                <span class="text-sm">Accès sur candidature uniquement</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-handshake text-yellow-500"></i>
+                                <span class="text-sm">Booking via recommandation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-purple-100 to-yellow-100 p-6 rounded-lg">
+                        <h4 class="font-bold mb-3">➍ Créer un format signature</h4>
+                        <p class="text-sm mb-3">Pas seulement la méthode, mais la mise en scène</p>
+                        <div class="bg-white p-3 rounded text-sm">
+                            <strong>Exemple :</strong> "Sprint Acquisition™ : 10 jours pour déployer ton canal d'acquisition, avec mon équipe en immersion"<br>
+                            <span class="text-xs text-gray-600">→ Tu vends une expérience unique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="analogy-box">
+                <div class="analogy-icon">🏋️ Analogie</div>
+                <div class="grid md:grid-cols-3 gap-4 mt-4 items-center">
+                    <div class="text-center">
+                        <div class="text-4xl mb-2">🏃‍♂️</div>
+                        <p><strong>Coach remplaçable</strong><br>"Un programme de muscu"</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="comparison-vs">VS</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-2">🏆</div>
+                        <p><strong>Expert reconnu</strong><br>"Le protocole BodyTorque™"</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="success-box">
+                <h3 class="text-xl font-bold mb-4">🎯 Objectif final</h3>
+                <p class="text-center text-lg font-semibold">
+                    "Ce qu'il propose, je ne le trouve nulle part ailleurs."
+                </p>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Part 6 -->
+        <section id="part6" class="section-card p-8 mb-12">
+            <div class="icon-container">
+                <i class="fas fa-rocket text-2xl text-black"></i>
+            </div>
+            <h2 class="text-4xl font-bold text-center mb-8">
+                <span class="chapter-number">Partie 6</span> — Les boosters psychologiques
+            </h2>
+            
+            <div class="context-intro">
+                <p><strong>Même quand une offre est bonne, il reste souvent des freins invisibles chez le prospect :</strong> il doute, il procrastine, il attend un signe extérieur…</p>
+                
+                <p>Les boosters psychologiques permettent de lever ces derniers blocages en rendant l'offre plus claire, moins risquée, plus désirable, et plus urgente.</p>
+                
+                <p>Ce ne sont pas des "trucs de copywriter" → ce sont des leviers neuro-comportementaux fondamentaux. Bien utilisés, ils démultiplient ton taux de closing.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <div class="bonus-badge">Booster #1</div>
+                        <h4 class="font-bold mb-3">💸 Une garantie forte</h4>
+                        <p class="text-sm mb-3">Rassure le prospect : "Même si ça se passe mal... je ne perds rien."</p>
+                        <div class="bg-white p-3 rounded text-sm">
+                            <strong>Exemple :</strong> "Si tu ne trouves pas ton premier client dans les 30 jours avec cette méthode, je t'offre une session de coaching privé."
+                        </div>
+                    </div>
+                    
+                    <div class="bg-red-50 p-6 rounded-lg">
+                        <div class="bonus-badge">Booster #2</div>
+                        <h4 class="font-bold mb-3">⏳ Une limite temporelle</h4>
+                        <p class="text-sm mb-3">Active le FOMO (Fear of Missing Out)</p>
+                        <div class="bg-white p-3 rounded text-sm">
+                            <strong>Exemple :</strong> "Tu peux rejoindre jusqu'à vendredi minuit. Ensuite, on ferme les portes pendant 3 mois."
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <div class="bonus-badge">Booster #3</div>
+                        <h4 class="font-bold mb-3">🧲 Un bonus surprise</h4>
+                        <p class="text-sm mb-3">Élément inattendu, actionnable, en lien avec la promesse</p>
+                        <div class="bg-white p-3 rounded text-sm">
+                            <strong>Exemple :</strong> "10 scripts d'e-mails copy/paste livrés dès la signature"
+                        </div>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <div class="bonus-badge">Booster #4</div>
+                        <h4 class="font-bold mb-3">💬 La preuve sociale active</h4>
+                        <p class="text-sm mb-3">Témoignages récents, captures d'écran, noms d'entreprises</p>
+                        <div class="bg-white p-3 rounded text-sm">
+                            <strong>Exemple :</strong> "Avant, on faisait 0 RDV. Après la méthode ProspectFlow™, on a signé 5 appels en 10 jours."
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="text-center mb-4">
+                    <i class="fas fa-quote-left text-3xl opacity-50"></i>
+                </div>
+                <p class="text-lg mb-4">"Avant, on avait du mal à générer 2 rendez-vous commerciaux qualifiés par mois. Avec la méthode ProspectFlow™, on a eu 15 rendez-vous qualifiés en 3 semaines. Le ROI a été immédiat."</p>
+                <div class="text-right">
+                    <strong>— Thomas, CEO SaaS B2B</strong>
+                </div>
+            </div>
+            
+            <div class="countdown-timer">
+                <h3 class="text-xl font-bold mb-4">⏰ Offre limitée</h3>
+                <div class="flex justify-center items-center">
+                    <div class="text-center">
+                        <div class="timer-number">02</div>
+                        <div class="text-sm">Jours</div>
+                    </div>
+                    <div class="mx-4">:</div>
+                    <div class="text-center">
+                        <div class="timer-number">14</div>
+                        <div class="text-sm">Heures</div>
+                    </div>
+                    <div class="mx-4">:</div>
+                    <div class="text-center">
+                        <div class="timer-number">37</div>
+                        <div class="text-sm">Minutes</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Part 7 -->
+        <section id="part7" class="section-card p-8 mb-12">
+            <div class="icon-container">
+                <i class="fas fa-microphone text-2xl text-black"></i>
+            </div>
+            <h2 class="text-4xl font-bold text-center mb-8">
+                <span class="chapter-number">Partie 7</span> — Le pitch parfait
+            </h2>
+            
+            <div class="context-intro">
+                <p><strong>Ne parle ni de toi, ni de ton parcours, ni de ton outil.</strong> L'erreur typique : « Alors moi je suis coach certifié, j'aide les entreprises à structurer leur stratégie avec des outils comme Notion, Figma et... » → Le prospect s'en fiche.</p>
+                
+                <p>Ce qu'il veut, c'est savoir où tu l'emmènes, comprendre comment ça va améliorer sa vie, et avoir confiance que tu maîtrises ce que tu proposes.</p>
+                
+                <p>Pour ça, tu veux que ton pitch tombe juste ? Pose d'abord 3 questions à ton prospect pour t'aligner parfaitement.</p>
+            </div>
+            
+            <div class="warning-box">
+                <h3 class="text-xl font-bold mb-4">⚠️ Ce qu'il ne faut surtout pas faire</h3>
+                <p class="mb-2">Ne parle ni de toi, ni de ton parcours, ni de ton outil.</p>
+                <div class="bg-red-200 p-4 rounded mt-4">
+                    <p class="text-sm">❌ <strong>L'erreur typique :</strong> "Alors moi je suis coach certifié, j'aide les entreprises à structurer leur stratégie avec des outils comme Notion, Figma et..."</p>
+                    <p class="text-xs mt-2"><strong>→ Le prospect s'en fiche.</strong></p>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h3 class="text-xl font-bold mb-4">🎯 La formule en 3 étapes</h3>
+                <div class="space-y-4">
+                    <div class="flow-step">
+                        <div class="text-lg font-bold text-accent-yellow mb-2">1. "Je travaille avec..."</div>
+                        <p class="text-sm">Cible précise + problème qu'ils souffrent</p>
+                        <div class="bg-white p-3 rounded mt-2 text-sm">
+                            <strong>Exemple :</strong> "Je travaille avec des CEOs de SaaS B2B qui ont du mal à signer leurs premiers clients parce qu'ils n'ont pas encore de machine de prospection."
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="text-lg font-bold text-accent-purple mb-2">2. "...pour les aider à..."</div>
+                        <p class="text-sm">Transformation claire et résultat concret</p>
+                        <div class="bg-white p-3 rounded mt-2 text-sm">
+                            <strong>Exemple :</strong> "...pour les aider à construire une machine d'acquisition simple, pilotable, qui génère ses premiers rendez-vous en moins de 30 jours."
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="text-lg font-bold text-accent-yellow mb-2">3. "...grâce à..."</div>
+                        <p class="text-sm">Méthode propriétaire ou format signature</p>
+                        <div class="bg-white p-3 rounded mt-2 text-sm">
+                            <strong>Exemple :</strong> "...grâce à mon sprint 8 semaines SalesCraft, 100% terrain, qu'on construit ensemble pas à pas."
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="formula-box">
+                <h3 class="text-xl font-bold mb-4">🧠 Le pitch en 1 phrase</h3>
+                <div class="text-center text-lg font-semibold mb-4 p-4 bg-yellow-100 rounded">
+                    "J'aide [cible] à [résultat] grâce à [méthode unique]"
+                </div>
+                <div class="bg-green-100 p-4 rounded">
+                    <strong>Exemple complet :</strong><br>
+                    "J'aide les fondateurs de SaaS à signer leurs premiers deals en vente complexe grâce à un sprint 8 semaines où on construit ensemble une machine d'acquisition rentable."
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h3 class="text-xl font-bold mb-4">🔥 Bonus : 3 questions à poser AVANT de pitcher</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="text-center">
+                        <div class="text-3xl mb-2">🎯</div>
+                        <strong>"Où est-ce que tu veux aller dans 6 mois ?"</strong>
+                        <p class="text-sm mt-2">→ Objectif</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl mb-2">🚫</div>
+                        <strong>"C'est quoi qui bloque aujourd'hui ?"</strong>
+                        <p class="text-sm mt-2">→ Douleur</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl mb-2">🔄</div>
+                        <strong>"T'as déjà tenté quoi ?"</strong>
+                        <p class="text-sm mt-2">→ Échecs passés</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Conclusion -->
+        <section class="section-card p-8 mb-12">
+            <div class="icon-container">
+                <i class="fas fa-flag-checkered text-2xl text-black"></i>
+            </div>
+            <h2 class="text-4xl font-bold text-center mb-8">🎯 Récap de toute la masterclass</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <div class="checklist-item">
+                        <div class="checklist-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>Une offre "bonne" ne suffit plus → il te faut une offre irrésistible</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>Tu dois résoudre un problème PURE (Painful, Urgent, Recognized, Expensive)</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>Construis une offre propriétaire et non-comparable</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>Rends-la attractive avec du stacking et des boosters psychologiques</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="checklist-item">
+                        <div class="checklist-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>Crée une méthode unique et nommée</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>Utilise des livrables distinctifs</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>Développe un format signature</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>Pitch avec une phrase simple et transformationnelle</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gradient-bg text-white p-8 rounded-lg mt-8 text-center">
+                <h3 class="text-2xl font-bold mb-4">🚀 Prêt à créer ton offre irrésistible ?</h3>
+                <p class="mb-6">Tu as maintenant toutes les clés pour transformer ton offre "correcte" en offre qui déclenche l'achat immédiat.</p>
+                <div class="sales-craft-logo inline-block">
+                    sales<span class="text-accent-yellow">CRAFT</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Checklist -->
+        <section class="action-checklist">
+            <div class="icon-container">
+                <i class="fas fa-tasks text-2xl text-black"></i>
+            </div>
+            <h3 class="text-3xl font-bold text-center">✅ Checklist d'action : Ta feuille de route</h3>
+            <p class="text-center text-gray-600 mb-8">Suis ces étapes pour créer ton offre irrésistible dès maintenant</p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div class="action-item">
+                        <div class="flex items-start">
+                            <div class="action-number">1</div>
+                            <div>
+                                <strong>Identifie un problème PURE</strong>
+                                <p class="text-sm text-gray-600 mt-1">Liste 3 problèmes que vivent tes prospects et évalue-les selon les critères Painful, Urgent, Recognized, Expensive</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-item">
+                        <div class="flex items-start">
+                            <div class="action-number">2</div>
+                            <div>
+                                <strong>Crée ta méthode propriétaire</strong>
+                                <p class="text-sm text-gray-600 mt-1">Donne un nom unique à ton approche et structure-la en 3-5 étapes claires</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-item">
+                        <div class="flex items-start">
+                            <div class="action-number">3</div>
+                            <div>
+                                <strong>Trouve ton sweet spot</strong>
+                                <p class="text-sm text-gray-600 mt-1">Identifie l'intersection entre besoins client, tes compétences et ce que les concurrents ne font pas</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-item">
+                        <div class="flex items-start">
+                            <div class="action-number">4</div>
+                            <div>
+                                <strong>Stacke ta valeur</strong>
+                                <p class="text-sm text-gray-600 mt-1">Ajoute 3-5 éléments complémentaires qui renforcent ta promesse principale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="action-item">
+                        <div class="flex items-start">
+                            <div class="action-number">5</div>
+                            <div>
+                                <strong>Conçois ton offre front-end</strong>
+                                <p class="text-sm text-gray-600 mt-1">Crée une offre d'entrée accessible qui mène naturellement vers ton offre complète</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-item">
+                        <div class="flex items-start">
+                            <div class="action-number">6</div>
+                            <div>
+                                <strong>Ajoute les boosters psychologiques</strong>
+                                <p class="text-sm text-gray-600 mt-1">Intègre garantie, urgence, bonus et preuves sociales pour maximiser la conversion</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-item">
+                        <div class="flex items-start">
+                            <div class="action-number">7</div>
+                            <div>
+                                <strong>Perfectionne ton pitch</strong>
+                                <p class="text-sm text-gray-600 mt-1">Formule ton offre en une phrase : "J'aide [cible] à [résultat] grâce à [méthode]"</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-item">
+                        <div class="flex items-start">
+                            <div class="action-number">8</div>
+                            <div>
+                                <strong>Teste et itère</strong>
+                                <p class="text-sm text-gray-600 mt-1">Présente ton offre à 3 prospects et ajuste selon leurs réactions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LinkedIn CTA -->
+        <section class="linkedin-cta">
+            <div class="text-center">
+                <div class="text-6xl mb-4">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <h3 class="text-3xl font-bold mb-4">🚀 Prêt à aller plus loin ?</h3>
+                <p class="text-xl mb-4">Tu as maintenant les bases pour créer une offre irrésistible.</p>
+                <p class="text-lg mb-6">Connecte-toi avec moi sur LinkedIn pour découvrir mes prochaines masterclasses et échanger sur tes projets B2B.</p>
+                <a href="https://www.linkedin.com/in/ali-rahmani-9328ba34/" target="_blank" class="linkedin-button">
+                    <i class="fab fa-linkedin mr-2"></i>
+                    Connecte-toi avec moi sur LinkedIn
+                </a>
+                <p class="text-sm mt-4 opacity-75">
+                    Partage cette masterclass avec ton réseau et aide d'autres entrepreneurs à créer des offres irrésistibles !
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="sales-craft-logo inline-block mb-6">
+                sales<span class="text-accent-yellow">CRAFT</span>
+            </div>
+            <p class="text-lg mb-4">La méthode pour créer des offres B2B irrésistibles</p>
+            <p class="text-sm opacity-75">© 2025 salesCraft - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up mr-2"></i>
+        Retour en haut
+    </div>
+
+    <script>
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Progress bar animation
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            
+            // Update progress bar if exists
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                progressBar.style.width = progress + '%';
+            }
+        });
+        
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all section cards
+        document.querySelectorAll('.section-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+        
+        // Countdown timer simulation
+        function updateCountdown() {
+            const timerElements = document.querySelectorAll('.timer-number');
+            timerElements.forEach(element => {
+                let currentValue = parseInt(element.textContent);
+                if (currentValue > 0) {
+                    currentValue--;
+                    element.textContent = currentValue.toString().padStart(2, '0');
+                }
+            });
+        }
+        
+        // Update countdown every minute
+        setInterval(updateCountdown, 60000);
+        
+        // Add click animations
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('checklist-item') || 
+                e.target.closest('.checklist-item')) {
+                const item = e.target.closest('.checklist-item') || e.target;
+                item.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    item.style.transform = 'scale(1)';
+                }, 150);
+            }
+        });
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"95ea41a85ad50488","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.6.2","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDm7Cgwhu5zZrszI8PZkmbIvUVuNsI63qIKCkicgqqe0Fh%2FgNIUdQ%2F7jKa97ortJLokr0q9l6crzoZ%2FqHiu5zaLuo3zSfOV7TEhIJs1QOknvOywCOqSyumOdCYrDWrweEvgwwWg%2BJUWHqyQSx9RD283extLjyhBAp7aUvsxMoTvvYYigf0h%2B5vNiKqz6hn%2Fo1Fewyj%2BFSkTA2hNQAHV%2BTmprHOBkpMoEmev1TEzHiAn4q52iUNQX%2BES1dD4BYWl0ZqBQecVvfEk9QxYKAaUz%2F6gYd4rpKbNjx6XAQpPCAvbGgsY8DZqWq9xPk49pQlrrNhRzOcO4hSrQQP3Gr5%2BZX1sMCLA7c4VXUd4akbDQ6YzYGsYKqjoP1aYhnyjTp5i4wtEmPKu%2Fun8%2Bseiq9RzoJI0DpAWFEMuqfmh5yfWLfoPIswearnaWoFtghNU636dWWfz0YJNXZRVuCDacskrSBAQ5a%2Bg9yHfoN7W5JbbLfdZF%2F0m4A%2Bm6IpqblkxXc6GGn5u882H57Rl%2F49owfDYwDzcE%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDm7Cgwhu5zZrszI8PZkmbIvUVuNsI63qIKCkicgqqe0Fh/gNIUdQ/7jKa97ortJLokr0q9l6crzoZ/qHiu5zaLuo3zSfOV7TEhIJs1QOknvOywCOqSyumOdCYrDWrweEvgwwWg+JUWHqyQSx9RD283extLjyhBAp7aUvsxMoTvvYYigf0h+5vNiKqz6hn/o1Fewyj+FSkTA2hNQAHV+TmprHOBkpMoEmev1TEzHiAn4q52iUNQX+ES1dD4BYWl0ZqBQecVvfEk9QxYKAaUz/6gYd4rpKbNjx6XAQpPCAvbGgsY8DZqWq9xPk49pQlrrNhRzOcO4hSrQQP3Gr5+ZX1sMCLA7c4VXUd4akbDQ6YzYGsYKqjoP1aYhnyjTp5i4wtEmPKu/un8+seiq9RzoJI0DpAWFEMuqfmh5yfWLfoPIswearnaWoFtghNU636dWWfz0YJNXZRVuCDacskrSBAQ5a+g9yHfoN7W5JbbLfdZF/0m4A+m6IpqblkxXc6GGn5u882H57Rl/49owfDYwDzcE=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
